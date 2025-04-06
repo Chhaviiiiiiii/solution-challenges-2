@@ -1,0 +1,147 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scheduling</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1 {
+      color: #2a7b47;
+      font-size: 1.8rem;
+      margin-top: 2em;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1.5em;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e0f7e9;
+    }
+
+    ul, li {
+      margin: 0.5em 0;
+    }
+
+    .note {
+      background-color: #ffffcc;
+      padding: 10px;
+      border-left: 4px solid #ffcc00;
+      margin: 1em 0;
+    }
+
+    .emoji-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section {
+      margin-bottom: 3em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <h1 class="emoji-title">🌱 1. Crop-Wise Seasonal Calendar</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Crop</th>
+          <th>Sowing Time</th>
+          <th>Harvesting Time</th>
+          <th>Duration (avg)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Wheat</td><td>Nov-Dec</td><td>Apr-May</td><td>~120-140 days</td></tr>
+        <tr><td>Maize</td><td>Feb-Mar / Jun-Jul</td><td>Jun-Jul / Oct-Nov</td><td>~90-120 days</td></tr>
+        <tr><td>Sugarcane</td><td>Nov-Feb</td><td>Dec-Feb (next year)</td><td>~10-16 months</td></tr>
+        <tr><td>Soybean</td><td>Jun-Jul</td><td>Oct-Nov</td><td>~100-120 days</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h1>💧 2. Irrigation Schedule (General)</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Crop</th>
+          <th>Stage</th>
+          <th>Irrigation Frequency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Wheat</td><td>Crown root initiation, tillering, grain filling</td><td>Every 20–25 days</td></tr>
+        <tr><td>Maize</td><td>Knee height, tasseling, silking</td><td>Every 7–10 days</td></tr>
+        <tr><td>Sugarcane</td><td>Early growth, tillering, grand growth</td><td>Every 10–15 days</td></tr>
+        <tr><td>Soybean</td><td>Flowering, pod filling</td><td>Rainfed (or 1–2 critical irrigations)</td></tr>
+      </tbody>
+    </table>
+    <div class="note">💡 <strong>Note:</strong> Use soil moisture sensors or weather forecasts to optimize.</div>
+  </div>
+
+  <div class="section">
+    <h1>🌾 3. Seed Management</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Crop</th>
+          <th>Seed Rate (kg/ha)</th>
+          <th>Treatment Required</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Wheat</td><td>100–125</td><td>Fungicide (e.g., Bavistin)</td></tr>
+        <tr><td>Maize</td><td>15–25</td><td>Fungicide + Insecticide</td></tr>
+        <tr><td>Sugarcane</td><td>35,000 setts/ha</td><td>Hot water treatment</td></tr>
+        <tr><td>Soybean</td><td>60–75</td><td>Rhizobium + Fungicide</td></tr>
+      </tbody>
+    </table>
+    <div class="note">📅 Schedule seed procurement 1–2 months before sowing, and ensure germination tests are done.</div>
+  </div>
+
+  <div class="section">
+    <h1>🧑‍🌾 4. Digital Scheduling Tools to Use</h1>
+    <ul>
+      <li><strong>Trello / Notion / Excel:</strong> for manual planning</li>
+      <li><strong>FarmERP / CropIn / AgriApp:</strong> for smart digital farm management</li>
+      <li><strong>Google Calendar / Reminders:</strong> for irrigation & fertilization alerts</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h1>🧠 Optional Automation Ideas</h1>
+    <ul>
+      <li><strong>Weather API Integration:</strong> irrigation adjustments</li>
+      <li><strong>Drone or Satellite Imagery:</strong> crop health monitoring</li>
+      <li><strong>SMS Reminders for Farmers:</strong> daily/weekly task updates</li>
+      <li><strong>AI-based yield prediction:</strong> using soil, weather, and crop data</li>
+    </ul>
+  </div>
+
+</body>
+</html>

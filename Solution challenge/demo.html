@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farm App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0ffe0, #f0fff0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: white;
+      padding: 2rem 3rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      color: #2d7a2d;
+      margin-bottom: 1.5rem;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .menu a {
+      text-decoration: none;
+    }
+
+    .menu button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .menu button:hover {
+      background-color: #388e3c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Main Menu</h1>
+    <div class="menu">
+      <a href="createaccount.html"><button onclick="myAccount()">My Account</button></a>
+      <a href="realtimeinfo.html"><button onclick="realTimeInfo()">Real-Time Info Access</button></a>
+      <a href="cropmonatraing.html"><button onclick="cropMonitoring()">Crop Monitoring</button></a>
+      <a href="datacollection.html"><button onclick="dataCollection()">Data Collection</button></a>
+      <a href="https://chatgpt.com/"><button onclick="aiChatbot()">AI Chatbot</button></a>
+      <a href="scheduling.html"><button onclick="scheduling()">Scheduling</button></a>
+    </div>
+  </div>
+
+  <script>
+    function myAccount() {
+      alert("Showing account details...");
+    }
+    function realTimeInfo() {
+      alert("Fetching real-time data...");
+    }
+    function cropMonitoring() {
+      alert("Accessing crop monitoring tools...");
+    }
+    function dataCollection() {
+      alert("Prompting for data input...");
+    }
+    function aiChatbot() {
+      alert("Opening AI Chatbot...");
+    }
+    function scheduling() {
+      alert("Opening scheduling options...");
+    }
+  </script>
+</body>
+</html>

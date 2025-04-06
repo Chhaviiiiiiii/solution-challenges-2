@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Create Account</title>
+    <style>
+                 body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+         .container {
+            border: 2px dashed white;
+            padding: 40px;
+            margin: 50px auto;
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        p, li {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1><l>User Profile Management:</l> </h1> 
+        <p  ><li> Users can easily create and manage their profiles,<br>allowing for personalized experiences and tailored content.</li>
+        <p ><li> Personalized Dashboard :: Each user has access to a customized dashboard <br>that displays relevant information and tools for efficient farming management.</p>
+        </li> 
+        <p> <li>Task Scheduling :: Users can schedule important farming tasks,<br> ensuring they stay organized and on top of their responsibilities.
+        </li></p>
+        <p><li>
+            Reminder Notifications :: The platform provides reminder notifications for critical tasks, <br>helping users take timely actions and avoid missed deadlines.
+            </li></p>
+            <p><li> Enhanced Organization :: With scheduling features users can better organize <br>their farming activities leading to improved productivity and efficiency.</li></p>
+    <p><li>User -Friendly Interface :: The intuitive design of the user account management and <br>scheduling features makes it easy for users to navigate and utilize the tools effectively</li></p>
+    </p>
+        <h2>Register</h2>
+        <form action="#" method="post">
+            <label for="Username">Username:</label>
+            <input type="text" name="Username" placeholder="Username" required>
+          
+          <br>
+            <label for="email">  Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="phone"> phone number:</label>
+  <input type="tel" maxlength="10" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+  <br><br>
+   
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+  <a href="demo.html"> 
+      <button type="button">submit</button>
+
+  </a>  
+  
+        </form>
+    </div>
+    
+</body>
+</html>

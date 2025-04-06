@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        h3 {
+            color: #333;
+        }
+        p {
+            text-align: left;
+        }
+        li {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            list-style: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        .highlight {
+            background-color: #d1ffd1;
+            font-weight: bold;
+            transition: background-color 0.5s ease;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Input and Tracking :</h1>
+        <button onclick="highlightItems()">Highlight Sections</button>
+
+        <p>
+            <li>Farmers can systematically record information about their farming practices,<br> including planting dates, crop varieties, and input usage.</li>
+            <img src="https://i.ytimg.com/vi/zfzP9Q-N_jg/maxresdefault.jpg">
+
+            <h3>Yield Monitoring :</h3>
+            <li>By tracking yields over time, farmers can identify trends and <br>assess the effectiveness of different farming techniques and inputs.</li>
+            <img src="https://tse3.mm.bing.net/th?id=OIP.8pYfvfLSBHBJqh0KvARGDAHaEK&pid=Api&P=0&h=180">
+
+            <h3>Challenge Identification :</h3>
+            <li>Farmers can document challenges faced during the growing season,<br> such as pest infestations or weather-related issues, to better understand their impact on productivity.</li>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.WBYpnEPUTTB2rFcxWkvoQAHaE8&pid=Api&P=0&h=180">
+
+            <h3>Data-Driven Insights :</h3>
+            <li>Analyzing collected data allows farmers to make informed decisions<br> based on empirical evidence rather than intuition, leading to improved outcomes.</li>
+            <img src="https://www.dominguezmarketing.net/wp-content/uploads/2017/08/Innovation.png">
+
+            <h3>Performance Benchmarking :</h3>
+            <li>Farmers can compare their data against industry standards or peer performance,<br> helping them identify areas for improvement and best practices.</li>
+            <img src="https://static.vecteezy.com/system/resources/previews/013/079/492/non_2x/benchmarking-icon-illustration-benchmarking-performance-process-survey-measurement-compare-target-infographic-template-concept-banner-pictogram-icon-set-icons-vector.jpg">
+
+            <h3>Enhanced Efficiency :</h3>
+            <li>By leveraging data insights, farmers can optimize resource allocation, reduce waste,<br> and ultimately increase overall farm productivity and profitability.</li>
+            <img src="https://images.indianexpress.com/2022/08/Production-of-crops-in-India-e1660771636223.jpg?resize=450">
+        </p>
+    </div>
+
+    <script>
+        function highlightItems() {
+            const items = document.querySelectorAll("li");
+            let index = 0;
+
+            function highlightNext() {
+                if (index > 0) {
+                    items[index - 1].classList.remove("highlight");
+                }
+                if (index < items.length) {
+                    items[index].classList.add("highlight");
+                    index++;
+                    setTimeout(highlightNext, 1000);
+                }
+            }
+
+            highlightNext();
+        }
+    </script>
+</body>
+</html>
